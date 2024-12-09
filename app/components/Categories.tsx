@@ -26,14 +26,14 @@ export default function Categories() {
   return (
     <section className="w-full px-4 py-[7rem] md:px-6">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-3xl font-bold tracking-tight  mb-8">
+        <h2 className="text-3xl font-bold tracking-tight mb-8">
           Top Categories
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
             <Link
               key={category.name}
-              href={"../components/productDectription/discription"}
+              href={category.href}
               className="group relative overflow-hidden rounded-lg"
             >
               <div className="aspect-[4/3] w-full">
@@ -48,12 +48,10 @@ export default function Categories() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
                 <div className="absolute bottom-0 p-6">
-                  <h3 className="mb-2 font-inter text-xl font-medium text-white">
+                  <h3 className="mb-2 text-xl font-medium text-white">
                     {category.name}
                   </h3>
-                  <p className="font-inter text-sm text-gray-200">
-                    {category.products}
-                  </p>
+                  <p className="text-sm text-gray-200">{category.products}</p>
                 </div>
               </div>
             </Link>

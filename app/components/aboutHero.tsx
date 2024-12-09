@@ -17,7 +17,7 @@ const AboutHero = () => {
         </p>
         <div className="pl-4 md:pl-6">
           <button className="bg-[#2e6a6d] text-white px-6 md:px-8 py-3 md:py-4 text-[14px] md:text-[16px] font-normal">
-            View collection
+            View Collection
           </button>
         </div>
       </div>

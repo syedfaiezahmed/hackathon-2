@@ -42,8 +42,7 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* Mobile Menu Button (Visible below 768px) */}
-        <button
+        <div
           className="lg:hidden flex items-center justify-center p-2"
           onClick={toggleMenu}
         >
@@ -63,7 +62,7 @@ const Navbar = () => {
               }
             />
           </svg>
-        </button>
+        </div>
       </div>
 
       {/* Mobile Menu Items (Visible below 768px) */}
